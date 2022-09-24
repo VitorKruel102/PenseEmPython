@@ -1,9 +1,5 @@
+
 # 1.3 Primeiro Programa: 
-from audioop import mul
-from pickletools import read_uint1
-from re import sub
-
-
 def PrimeiroPrograma():
     print('Hello World!')
 
