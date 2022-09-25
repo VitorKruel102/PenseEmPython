@@ -2,8 +2,7 @@
 # 1.3 Primeiro Programa: 
 def primeiro_programa():
     print('Hello World!')
-
-
+    
 # 1.4 Operadores Aritméticos:
 def operadores():
     soma = 40 + 2
@@ -18,7 +17,6 @@ def operadores():
     print(f'Divisão: {divisao}')
     print(f'Exponenciação: {exponenciacao}')
     
-
 # 1.5 Valores e Tipos:
 def valores_tipos():
     print(type(2))
@@ -26,11 +24,21 @@ def valores_tipos():
     print(type('Hello, World!'))
     pass
 
-
 # 2.3 Expressões e instruções:
 def expressoes():
     n = 17
     print(n + 25)    
     pass
+
+# 4.1 Programa de Interface:
+def programa_turtle():
+    import turtle 
+    app = turtle.Turtle()
+    print(app)
+    turtle.mainloop()
+
+
+
+
 if __name__ == '__main__':
-    expressoes()
+    programa_turtle()
