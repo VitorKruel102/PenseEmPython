@@ -1,5 +1,8 @@
+import math
+import turtle
 
-# 1.3 Primeiro Programa: 
+
+# 1.3 Primeiro Programa:
 def primeiro_programa():
     print('Hello World!')
     
@@ -31,14 +34,20 @@ def expressoes():
     pass
 
 # 4.1 Programa de Interface:
-def programa_turtle():
-    import turtle 
-    app = turtle.Turtle()
-    print(app)
+def programa_polygon(n=7, length=70):
+    t = turtle.Turtle()
+    angle = 360 / n
+    for i in range(n):
+        t.fd(length)
+        t.lt(angle)
+
     turtle.mainloop()
 
-
-
-
+def programa_circle(t=5, r=50):
+    circumference = 2 * math.pi * r
+    n = 50
+    length = circumference / n
+    programa_polygon(n, length)
+    
 if __name__ == '__main__':
-    programa_turtle()
+    programa_circle(7, 70)
